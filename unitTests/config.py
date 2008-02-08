@@ -1,9 +1,9 @@
 # import the openWNS module. Contains all sub-classes needed for
 # configuration of openWNS
-import openwns.OpenWNS
+import openwns
 
-# create an instance of the openWNS configuration
-# The variable must be called WNS!!!!
-WNS = openwns.OpenWNS.OpenWNS()
+simulator = openwns.Simulator()
 
-WNS.masterLogger.enabled = False
+simulator.environment.masterLogger.enabled = False
+
+openwns.setSimulator(simulator)
