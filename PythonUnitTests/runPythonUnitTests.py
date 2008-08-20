@@ -12,10 +12,12 @@ class SubdirWithTests:
         self.pythonPath = pythonPath
 
 class PythonUnitTests:
-    subdirs = [ SubdirWithTests(sandboxPath + '/dbg/lib/PyConfig',
-                                sandboxPath + '/dbg/lib/PyConfig'),
+    subdirs = [ 
                 SubdirWithTests(sandboxPath + '/default/lib/python2.4/site-packages/wnsbase',
                                 sandboxPath + '/default/lib/python2.4/site-packages')
+
+		SubdirWithTests(sandboxPath + '/dbg/lib/PyConfig',
+                                sandboxPath + '/dbg/lib/PyConfig'),
                 ]
 
     allTests = unittest.TestSuite()
