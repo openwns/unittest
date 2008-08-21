@@ -14,7 +14,7 @@ class SubdirWithTests:
 class PythonUnitTests:
     subdirs = [ 
                 SubdirWithTests(sandboxPath + '/default/lib/python2.4/site-packages/wnsbase',
-                                sandboxPath + '/default/lib/python2.4/site-packages')
+                                sandboxPath + '/default/lib/python2.4/site-packages'),
 
 		SubdirWithTests(sandboxPath + '/dbg/lib/PyConfig',
                                 sandboxPath + '/dbg/lib/PyConfig'),
