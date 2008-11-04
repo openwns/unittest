@@ -1,15 +1,21 @@
 # import the openWNS module. Contains all sub-classes needed for
 # configuration of openWNS
+moduleList = ["constanze", "simpleTL"]
+
 import openwns
-# this is a project which shows how to write a loadable module to extend openWNS
-import projname
-# the load generator
-import constanze
-# simplified transport layer
-import simpleTL
+
+for module in moduleList:
+    try:
+	__import__(module)
+    except ImportError:
+	print "C++ Unit Test Warning: Module " + module + " is not available\n"
+	
 
 simulator = openwns.Simulator()
 
 simulator.environment.masterLogger.enabled = False
+
+simulator.outputStrategy = openwns.simulator.OutputStrategy.DELETE
+simulator.masterLogger.enabled = False
 
 openwns.setSimulator(simulator)
