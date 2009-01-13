@@ -1,6 +1,6 @@
 # import the openWNS module. Contains all sub-classes needed for
 # configuration of openWNS
-moduleList = ["constanze", "simpleTL"]
+moduleList = ["constanze", "simpleTL", "dll", "rise", "ofdmaphy", "wifimac", "ip"]
 
 import openwns
 
