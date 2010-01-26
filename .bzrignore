@@ -3,3 +3,12 @@ output
 FTFadingOutput.junk
 CA-Tahoe.txt
 SlowStartMode.txt
+rise.pathloss.detail.HashRNG_PDF.dat
+rise.pathloss.ITUAntennaTest.Azimuth0.py
+rise.pathloss.ITUAntennaTest.Azimuth30.py
+rise.pathloss.ITUInHTest.losPathloss.py
+rise.pathloss.ITUInHTest.losProbability.py
+rise.pathloss.ITUInHTest.nlosPathloss.py
+rise.pathloss.ITUUMaTest.losPathloss.py
+rise.pathloss.ITUUMaTest.losProbability.py
+rise.pathloss.ITUUMaTest.nlosPathloss.py
