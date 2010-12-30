@@ -12,3 +12,17 @@ rise.pathloss.ITUInHTest.nlosPathloss.py
 rise.pathloss.ITUUMaTest.losPathloss.py
 rise.pathloss.ITUUMaTest.losProbability.py
 rise.pathloss.ITUUMaTest.nlosPathloss.py
+unitTests/rise.pathloss.detail.HashRNG.acorr.py
+unitTests/rise.pathloss.detail.HashRNG.Base_PDF.dat
+unitTests/rise.pathloss.detail.HashRNG.Norm_PDF.dat
+unitTests/rise.pathloss.detail.HashRNG.position.acorr.py
+unitTests/rise.pathloss.detail.ITUUMa.carPenetration_PDF.dat
+unitTests/rise.pathloss.detail.RNG.acorr.py
+unitTests/rise.pathloss.ITUAntennaTest.Azimuth0.py
+unitTests/rise.pathloss.ITUAntennaTest.Azimuth30.py
+unitTests/rise.pathloss.ITUInHTest.losPathloss.py
+unitTests/rise.pathloss.ITUInHTest.losProbability.py
+unitTests/rise.pathloss.ITUInHTest.nlosPathloss.py
+unitTests/rise.pathloss.ITUUMaTest.losPathloss.py
+unitTests/rise.pathloss.ITUUMaTest.losProbability.py
+unitTests/rise.pathloss.ITUUMaTest.nlosPathloss.py
