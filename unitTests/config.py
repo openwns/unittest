@@ -1,21 +1,18 @@
-# import the openWNS module. Contains all sub-classes needed for
-# configuration of openWNS
-moduleList = ["constanze", "simpleTL", "dll", "rise", "ofdmaphy", "wifimac", "ip", "wimac", "tcp", "copper", "glue"]
-
+# import the WNS module. Contains all sub-classes needed for
+# configuration of WNS
 import openwns
+import os
+
+moduleList = os.listdir(os.path.join("..","..","..","sandbox","dbg","lib","PyConfig"))
 
 for module in moduleList:
-    try:
 	__import__(module)
-    except ImportError:
-	print "C++ Unit Test Warning: Module " + module + " is not available\n"
-	
+		    
+import openwns.node
+# create an instance of the WNS configuration
+# The variable must be called WNS!!!!
+WNS = openwns.Simulator(simulationModel = openwns.node.NodeSimulationModel())
+WNS.outputStrategy = openwns.simulator.OutputStrategy.DELETE
+WNS.masterLogger.enabled = False
 
-simulator = openwns.Simulator()
-
-simulator.environment.masterLogger.enabled = False
-
-simulator.outputStrategy = openwns.simulator.OutputStrategy.DELETE
-simulator.masterLogger.enabled = False
-
-openwns.setSimulator(simulator)
+openwns.setSimulator(WNS)
